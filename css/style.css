@@ -10,20 +10,83 @@
    list-style: none;
    text-decoration: none;
 }
-/* Variables */
-:root {
-    --main-color: #C8AE85 ;
-    --second-color: #4C362C ;
-    --text-color: #ffffff ;
-    --bg-color: #000000 ;
-
- /* box shadow */
---box-shadow: 2px 2px 18px rgb(86	63	28 / 15%);
-}
 
 img{
     width: 100%;
 }
+
 body{
     color: var(--text-color);
+}
+
+/* Style untuk header dan navbar */
+header {
+    background-color: #000; /* warna hitam untuk background */
+    width: 100%;
+    position: fixed; /* Navbar tetap di bagian atas */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem; /* Ubah dari 1rem menjadi 0.5rem untuk padding atas-bawah */
+}
+
+.nav img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar li {
+    position: relative; /* Penting untuk pseudo-element */
+    transition: background-color 0.3s; /* Transisi background */
+}
+
+.navbar li a {
+    color: #fff; /* Warna teks utama */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Padding untuk memperbesar area klik */
+    display: block; /* Membuat link mengambil seluruh area */
+}
+
+/* Efek background saat hover pada seluruh item li */
+.navbar li:hover {
+    background-color: #b3afaf; /* Ganti background saat hover */
+}
+
+/* Warna teks tetap sama saat hover */
+.navbar li:hover a {
+    color: #000; /* Ganti warna teks saat hover */
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Sembunyikan navbar pada layar kecil */
+    }
+    #menu:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Tampilkan di bawah header */
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 1rem;
+    }
+    #menu-icon {
+        display: block; /* Tampilkan ikon menu */
+    }
 }
