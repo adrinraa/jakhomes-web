@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JakHomes</title>
-    <!-- Tambahkan link Google Fonts di sini -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Link CSS dan Boxicons tetap sama -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>JakHomes - Sale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <!-- Navbar Section -->
     <header>
         <div class="nav container">
-            <!-- Logo as Link to Home -->
             <a href="index.html" class="logo-link">
-                <img class="logo" src="assets/only logo JH.png" alt="JakHomes Logo" width="90" style="cursor: pointer;">    
+                <img class="logo" src="assets/only logo JH.png" alt="JakHomes Logo" width="90" style="cursor: pointer;">
             </a>
-            
-            <!-- Navigation List -->
             <ul class="navbar" aria-label="Main Navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sale.html">Sale</a></li>
-                <li><a href="rent.html" class="active">Rent</a></li>
+                <li><a href="sale.html" class="active">Sale</a></li>
+                <li><a href="rent.html">Rent</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="review.html">Review</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -33,26 +27,331 @@
             </ul>
         </div>
     </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search Property">
+        <div class="dropdown">
+            <select>
+                <option value="all">All</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="townhouse">Townhouse</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="for-sale-title">
+        <h1>FOR RENT</h1>
+    </div>
+
+    <div class="property-grid">
+        <div class="property-box">
+            <div class="property-image">
+                <a href="detail.html">
+                <img src="assets/house1.png" alt="house1">
+                </a>
+            </div>
+            <div class="property-info">
+                <p class="property-title">Luxurious Classic</p>
+                <p class="property-location"><i class="bx bx-map"></i> Grogol Utara, Jakarta Selatan</p>
+        
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 624 m²</span>
+                    <span><i class="bx bx-building"></i> 700 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 7</span>
+                </div>
+                
+                <p class="property-price">IDR 19.500.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house2.jpg" alt="house2">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Modern Minimalist</p>
+                <p class="property-location"><i class="bx bx-map"></i> Kemang, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 450 m²</span>
+                    <span><i class="bx bx-building"></i> 500 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 17.200.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house3.jpg" alt="house3">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Elegant Contemporary</p>
+                <p class="property-location"><i class="bx bx-map"></i> Cipete, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 350 m²</span>
+                    <span><i class="bx bx-building"></i> 380 m²</span>
+                    <span><i class="bx bx-bed"></i> 3</span>
+                    <span><i class="bx bx-bath"></i> 5</span>
+                </div>
+                
+                <p class="property-price">IDR 14.500.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house4.jpg" alt="house4">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Urban Mansion</p>
+                <p class="property-location"><i class="bx bx-map"></i> Jagakarsa, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 490 m²</span>
+                    <span><i class="bx bx-building"></i> 520 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 17.300.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house5.jpg" alt="house5">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Luxurious Villa</p>
+                <p class="property-location"><i class="bx bx-map"></i> Pondok Indah, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 600 m²</span>
+                    <span><i class="bx bx-building"></i> 680 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 7</span>
+                </div>
+                
+                <p class="property-price">IDR 21.300.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house6.jpg" alt="house6">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Classic Mansion</p>
+                <p class="property-location"><i class="bx bx-map"></i> Senopati, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 750 m²</span>
+                    <span><i class="bx bx-building"></i> 800 m²</span>
+                    <span><i class="bx bx-bed"></i> 6</span>
+                    <span><i class="bx bx-bath"></i> 8</span>
+                </div>
+                
+                <p class="property-price">IDR 25.000.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house7.jpg" alt="house7">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Contemporary Urban</p>
+                <p class="property-location"><i class="bx bx-map"></i> Cilandak, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 500 m²</span>
+                    <span><i class="bx bx-building"></i> 530 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 18.500.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image">
+                <img src="assets/house8.jpg" alt="house8">
+            </div>
+            <div class="property-info">
+                <p class="property-title">Urban Chic</p>
+                <p class="property-location"><i class="bx bx-map"></i> Kebayoran Baru, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 400 m²</span>
+                    <span><i class="bx bx-building"></i> 420 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 5</span>
+                </div>
+                
+                <p class="property-price">IDR 16.700.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Elegant Classic</p>
+                <p class="property-location"><i class="bx bx-map"></i> Gandaria, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 550 m²</span>
+                    <span><i class="bx bx-building"></i> 600 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 19.000.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Grand Residence</p>
+                <p class="property-location"><i class="bx bx-map"></i> Dharmawangsa, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 620 m²</span>
+                    <span><i class="bx bx-building"></i> 680 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 7</span>
+                </div>
+                
+                <p class="property-price">IDR 22.000.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Modern Luxury</p>
+                <p class="property-location"><i class="bx bx-map"></i> Permata Hijau, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 580 m²</span>
+                    <span><i class="bx bx-building"></i> 630 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 7</span>
+                </div>
+                
+                <p class="property-price">IDR 20.500.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Exclusive Estate</p>
+                <p class="property-location"><i class="bx bx-map"></i> Pejaten Barat, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 500 m²</span>
+                    <span><i class="bx bx-building"></i> 550 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 18.300.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Classic Luxury</p>
+                <p class="property-location"><i class="bx bx-map"></i> Lebak Bulus, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 670 m²</span>
+                    <span><i class="bx bx-building"></i> 720 m²</span>
+                    <span><i class="bx bx-bed"></i> 5</span>
+                    <span><i class="bx bx-bath"></i> 7</span>
+                </div>
+                
+                <p class="property-price">IDR 23.000.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Modern Classic</p>
+                <p class="property-location"><i class="bx bx-map"></i> Radio Dalam, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 470 m²</span>
+                    <span><i class="bx bx-building"></i> 510 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 6</span>
+                </div>
+                
+                <p class="property-price">IDR 17.800.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Exclusive Mansion</p>
+                <p class="property-location"><i class="bx bx-map"></i> Ciputat, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 680 m²</span>
+                    <span><i class="bx bx-building"></i> 740 m²</span>
+                    <span><i class="bx bx-bed"></i> 6</span>
+                    <span><i class="bx bx-bath"></i> 8</span>
+                </div>
+                
+                <p class="property-price">IDR 24.500.000.000</p>
+            </div>
+        </div>
+        <div class="property-box">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <p class="property-title">Chic Modern</p>
+                <p class="property-location"><i class="bx bx-map"></i> Fatmawati, Jakarta Selatan</p>
+                
+                <div class="property-features">
+                    <span><i class="bx bx-expand"></i> 420 m²</span>
+                    <span><i class="bx bx-building"></i> 450 m²</span>
+                    <span><i class="bx bx-bed"></i> 4</span>
+                    <span><i class="bx bx-bath"></i> 5</span>
+                </div>
+                
+                <p class="property-price">IDR 15.500.000.000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <span><</span> <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>></span>
+    </div>
+
     <footer>
         <div class="footer-container">
             <div class="footer-section company-info" style="text-align: left;">
               <img src="assets/logo footer.png" alt="Logo JakHomes" style="width: 200px; height: auto; margin-bottom: 10px;">
               <h4>PT. Syaka Kreasi Indonesia</h4>
-              <p>Office Address: The Manhattan Square 
+              <p>Office Address : The Manhattan Square 
                 Building, Mid Tower 12th Floor Unit F
                 Jl. TB Simatupang Kav. 1 - S, Jakarta 12560</p>
+              <p>Branch Office : LATINOS Business District STD C11/12, BSD - Serpong
+                Tangerang Selatan</p>
             </div>
             <div class="footer-section company-contact" style="text-align: left;">
               <h4>Contact Us</h4>  
-                <p>Telepon: (021) 8064 1033</p>
-                <p>Fax: (021) 8064 1001</p>
-                <p>Email: info@jakhomes.id</p>
+                <p>Telepon : (021) 8064 1033</p>
+                <p>Fax : (021) 8064 1001</p>
+                <p>Email : info@jakhomes.id</p>
               </div>
             <div class="footer-section quick-links">
               <h4>Menu</h4>
               <ul>
-                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="Rent.html">Rent</a></li>
                 <li><a href="service.html">Services</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="about.html">About Us</a></li>
               </ul>
             </div>
             <div class="footer-section social-media">
@@ -61,19 +360,19 @@
                 <li>
                     <a href="https://www.instagram.com/jakhomes.id" target="_blank">
                       <img src="assets/instagram logo.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;"> 
-                    @jakhomes.id
+                      @jakhomes.id
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/jakhomesbuilddecor" target="_blank">
                       <img src="assets/instagram logo.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;"> 
-                    @jakhomesbuilddecor
+                      @jakhomesbuilddecor
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/expatpropertyjakarta" target="_blank">
                       <img src="assets/instagram logo.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;"> 
-                    @expatpropertyjakarta
+                      @expatpropertyjakarta
                     </a>
                 </li>
               </ul>

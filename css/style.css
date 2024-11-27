@@ -97,35 +97,52 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--bg-color);
+  background-color: var(--second-color);
+  gap: 20px;
   color: #fff;
-  padding: 20px;
+  padding: 20px 30px 10px;
   position: relative;
   font-size: 14px;
   line-height: 1.6;
+  overflow: hidden;
+}
+
+.footer-container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .footer-section {
-  flex: 1;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
   padding: 10px;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .company-info {
-  position: relative; /* Agar elemen anak mengikuti container ini */
-    padding-left: 20px; /* Atur jarak kiri untuk teks dan logo */
-}
+  display: flex;
+  flex-direction: column; /* Vertikal */
+  align-items: flex-start; /* Sejajarkan ke kiri */
+  padding-left: 20px; /* Atur sesuai kebutuhan */
+  margin-bottom: 20px; /* Jarak di bawah logo */
+  }
 
 .company-info img {
-  position: absolute;
-  top: -50px; /* Atur jarak vertikal */
-  left: 20px; /* Sesuaikan posisi horizontal */
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .footer-section h4 {
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 16px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
 }
 
 .footer-section ul {
@@ -152,6 +169,24 @@ header {
 .footer-section ul li a:hover {
   text-decoration: none;
   transform: translateY(-5px);
+}
+
+.quick-links ul {
+  display: grid; /* Aktifkan grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Buat 2 kolom dengan lebar sama */
+  gap: 5px; /* Atur jarak antar item */
+  padding: 0; /* Hilangkan padding default */
+  list-style: none; /* Hilangkan bullet points */
+}
+
+.quick-links ul li {
+  margin: 0; /* Hilangkan margin default */
+  padding: 5px 0; /* Jarak vertikal antar item */
+  line-height: 1.6; /* Sesuaikan jarak antar baris */
+}
+
+.quick-links ul li:last-child {
+  margin-bottom: 0; /* Hilangkan margin terakhir */
 }
 
 .footer-bottom {
