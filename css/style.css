@@ -196,6 +196,8 @@ header {
   font-size: 14px;
 }
 
+/*Sale*/
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -213,24 +215,24 @@ header {
 }
 
 .dropdown select {
-    padding: 10px;
-    border: 1px solid var(--main-color);
-    border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
 }
 
 .for-sale-title h1 {
-    color: var(--text-color);
-    font-size: 32px;
-    text-align: center;
-    margin-top: 40px;
+  color: var(--text-color);
+  font-size: 32px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .property-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ubah jumlah kolom menjadi 3 */
-    gap: 20px;
-    padding: 0 40px;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 0 40px;
+  margin-bottom: 40px;
 }
 
 .property-box {
@@ -239,275 +241,647 @@ header {
   overflow: hidden;
   box-shadow: var(--box-shadow);
   transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  height: auto; /* Allow the content to define the height */
 }
 
 .property-box:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
-/* Ensure the image has a 4:5 aspect ratio */
 .property-image img {
-    width: 100%;
-    height: auto; /* Ensure the height adjusts according to the aspect ratio */
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 /* Property Info Styling */
 .property-info {
-    padding: 15px;
-    color: var(--text-color);
-    background-color: var(--second-color);
-    box-sizing: border-box;
+  padding: 15px;
+  color: var(--text-color);
+  background-color: var(--second-color);
+  box-sizing: border-box;
 }
 
 /* Text layout updates based on your reference */
 .property-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px; /* Adjust spacing */
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px; /* Adjust spacing */
 }
 
 .property-location {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .property-features {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .property-price {
-    font-size: 24px;
-    font-weight: 700;
-    color: #ffffff; /* Update price color as per reference */
-    margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff; /* Update price color as per reference */
+  margin-top: 10px;
 }
 
 /* Optional: Adjusting icon sizes for better alignment */
 .property-features i {
-    font-size: 16px;
-    margin-right: 5px;
+  font-size: 16px;
+  margin-right: 5px;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
 }
 
 .pagination span {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: var(--main-color);
-    color: var(--text-color);
-    border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-radius: 5px;
 }
 
 /* Property Detail Section */
 .property-detail-container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1200px;
-  flex-wrap: wrap;
+display: flex;
+gap: 20px;
+padding: 20px;
+margin: 20px auto;
+max-width: 1200px;
+flex-wrap: wrap;
 }
 
 /* Main Image */
 .main-image-container {
-  flex: 2;
-  max-width: 600px; /* Membatasi lebar gambar utama */
-  display: flex;
-  justify-content: center; /* Memusatkan gambar secara horizontal */
+flex: 2;
+max-width: 600px; /* Membatasi lebar gambar utama */
+display: flex;
+justify-content: center; /* Memusatkan gambar secara horizontal */
 }
 
 .main-image-container img {
-  width: 100%;
-  height: auto; /* Pastikan gambar mengikuti rasio potrait */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 100%;
+height: auto; /* Pastikan gambar mengikuti rasio potrait */
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Image Grid */
 .image-grid {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center; /* Memusatkan gambar grid secara vertikal */
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center; /* Memusatkan gambar grid secara vertikal */
 }
 
 .image-grid img {
-  width: 20%;
-  max-height: fit-content; 
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  aspect-ratio: 3 / 4;
+width: 20%;
+max-height: fit-content; 
+object-fit: cover;
+border-radius: 8px;
+cursor: pointer;
+aspect-ratio: 3 / 4;
 }
 
 .image-grid img:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
+}
+
+/* Property Detail Section */
+.property-detail-container {
+display: flex;
+gap: 20px;
+padding: 20px;
+margin: 20px auto;
+max-width: 1200px;
+flex-wrap: wrap;
+}
+
+/* Main Image */
+.main-image-container {
+flex: 2;
+max-width: 600px; /* Membatasi lebar gambar utama */
+display: flex;
+justify-content: center; /* Memusatkan gambar secara horizontal */
+}
+
+.main-image-container img {
+width: 100%;
+height: auto; /* Pastikan gambar mengikuti rasio potrait */
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Grid */
+.image-grid {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center; /* Memusatkan gambar grid secara vertikal */
+}
+
+.image-grid img {
+width: 20%;
+max-height: fit-content; 
+object-fit: cover;
+border-radius: 8px;
+cursor: pointer;
+aspect-ratio: 3 / 4;
+}
+
+.image-grid img:hover {
+transform: scale(1.05);
 }
 
 /* Property Info Section */
 .property-info {
-  padding: 20px;
-  background-color: #5e503f;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 0 auto;
+padding: 20px;
+background-color: #5e503f;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+margin: 0 auto;
 }
 
 .property-info h1 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: white;
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 10px;
+color: white;
 }
 
 .property-price h2 {
-  font-size: 28px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 15px;
+font-size: 28px;
+color: #fff;
+font-weight: 600;
+margin-bottom: 15px;
 }
 
 .property-details {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .property-details li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
-  font-size: 16px;
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 10px 0;
+font-size: 16px;
 }
 
 .property-details i {
-  font-size: 20px;
-  color: bisque;
+font-size: 20px;
+color: bisque;
 }
 
 .property-description {
-  margin-top: 20px;
-  background-color: bisque;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: justify;  
+margin-top: 20px;
+background-color: bisque;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: justify;  
 }
 
 .property-description h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-  text-align: left; 
+font-size: 20px;
+font-weight: 600;
+color: #333;
+margin-bottom: 10px;
+text-align: left; 
 }
 
 .property-description p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
+font-size: 16px;
+line-height: 1.6;
+color: #333;
 }
 
 /* Agent Contact Section */
 .agent-contact {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  background-color: #5e503f;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  max-width: 400px;
-  margin: 20px auto;
+display: flex;
+gap: 10px;
+align-items: center;
+background-color: #5e503f;
+border-radius: 8px;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+max-width: 400px;
+margin: 20px auto;
 }
 
 .agent-contact img.agent-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid burlywood;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid burlywood;
 }
 
 .agent-info h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 0.2px;
-  color: #fff;
+font-size: 26px;
+font-weight: 600;
+margin-bottom: 0.2px;
+color: #fff;
 }
 
 .agent-info p {
-  font-size: 14px;
-  color: white;
-  margin-bottom: 10px;
+font-size: 14px;
+color: white;
+margin-bottom: 10px;
 }
 
 .contact-buttons {
-  display: flex;
-  gap: 10px;
+display: flex;
+gap: 10px;
 }
 
 .contact-buttons button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #000000;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: #000000;
+font-weight: bold;
+font-size: 14px;
+transition: background-color 0.3s ease;
 }
 
 .call-button {
-  background-color: #3498db;
+background-color: #3498db;
 }
 
 .call-button:hover {
-  background-color: #2980b9;
+background-color: #2980b9;
 }
 
 .whatsapp-button {
-  background-color: #25d366;
+background-color: #25d366;
 }
 
 .whatsapp-button:hover {
-  background-color: #1dbf57;
+background-color: #1dbf57;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .property-detail-container {
-      flex-direction: column;
+.property-detail-container {
+    flex-direction: column;
+}
+
+.image-grid img {
+    height: 80px;
+}
+
+.agent-contact {
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+/*Team*/
+
+h1 {
+text-align: center;
+margin: 100px 0;
+color: var(--text-color);
+font-size: 32px;
+}
+
+.team-container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 10px;
+}
+
+.team-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.team-member {
+background-color: var(--second-color);
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+padding: 20px;
+transition: transform 0.2s;
+}
+
+.team-member:hover {
+transform: translateY(-10px);
+}
+
+.team-member img {
+width: 250px;
+height: 310px;
+border-radius: 8%;
+object-fit: cover;
+margin-bottom: 0px;
+border: 4px solid #C8AE85; /* Sesuai dengan main color proyek */
+}
+
+.team-member h2 {
+font-size: 22px;
+margin: 10px 0;
+color: var(--text-color);
+}
+
+.team-member p {
+font-size: 16px;
+color: var(--main-color);
+}
+
+.social-links {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.social-links a {
+display: inline-block;
+background-color: var(--bg-color); /* Main color proyek */
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-links a img {
+width: 20px;
+height: 20px;
+filter: brightness(0) invert(1); /* Ikon putih di atas warna utama */
+}
+
+.social-links a:hover {
+transform: scale(1.2);
+background-color: #e5c8a8; /* Warna hover yang lebih terang */
+}
+
+@media screen and (max-width: 768px) {
+.team-grid {
+  grid-template-columns: 1fr;
+}
+}
+
+/* About Us Hero Section */
+.about-us-hero {
+  background-image: url('../assets/bgabout.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to make the text pop */
+.hero-overlay h1:hover {
+  transform: scale(1.1); /* Scale up the text */
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
+}
+
+/* Responsive Utility */
+@media (max-width: 768px) {
+  .about-us-hero {
+      min-height: 40vh;
   }
 
-  .image-grid img {
-      height: 80px;
+  .hero-overlay h1 {
+      font-size: 2rem;
   }
 
-  .agent-contact {
-      flex-direction: column;
-      align-items: flex-start;
+  .history-grid, .journey-grid, .founders-grid {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .history-text, .journey-text, .founder {
+      text-align: left;
   }
 }
+
+/* Company History Section */
+.company-history {
+  padding: 50px 0;
+  background-color: var(--bg-color);
+}
+
+.history-grid {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.history-text {
+  flex: 1; 
+  padding: 20px;
+  color: var(--text-color);
+  text-align: justify; 
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Pop-up effect on hover */
+.history-text:hover {
+  transform: scale(1.05); /* Make the history text scale slightly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.history-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  text-shadow: 2px 2px 8px rgba(143, 130, 96, 0.7);
+}
+
+.history-text p {
+  font-size: 16px;
+}
+
+.history-image {
+  flex: 1; 
+  text-align: right; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+  height: 100%; 
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Pop-up effect for history image */
+.history-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.history-image img {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 10%; 
+  object-fit: cover; 
+  box-shadow: var(--box-shadow); 
+}
+
+/* Company Journey Section */
+.company-journey {
+  padding: 50px 0;
+  background-color: var(--second-color);
+}
+
+.journey-grid {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+
+.journey-image {
+  flex: 1; 
+}
+
+.journey-image img {
+  width: 100%; 
+  border-radius: 8px; 
+  object-fit: cover; 
+  box-shadow: var(--box-shadow); 
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Pop-up effect on journey image hover */
+.journey-image:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.journey-text {
+  flex: 1; 
+  padding: 20px;
+  color: var(--text-color); 
+  text-align: justify; 
+  line-height: 1.6; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Pop-up effect on journey text hover */
+.journey-text:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.journey-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--bg-color); 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.journey-text p {
+  font-size: 16px;
+}
+
+/* Founder Section */
+.founders {
+  padding: 50px 0;
+  background-color: var(--bg-color);
+}
+
+.founders-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+
+.founder {
+  background-color: var(--second-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Pop-up effect on founder hover */
+.founder:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.founder img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.founder h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.founder p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .about-us-hero {
+      min-height: 40vh;
+  }
+
+  .hero-overlay h1 {
+      font-size: 2rem;
+  }
+
+  .history-grid, .journey-grid, .founders-grid {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .history-text, .journey-text, .founder {
+      text-align: left;
+  }
+
+  .history-image img, .journey-image img, .founder img {
+      max-height: 250px;
+  }
+}
+
