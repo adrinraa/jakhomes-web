@@ -699,6 +699,69 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
 }
 }
 
+/* Review */
+
+.review-hero {
+  background-image: url('../assets/reviewbg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.review-section {
+  background-color: var(--bg-color);
+  margin-top: 30px;
+  margin-bottom: auto;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Agar responsif */
+}
+
+.review-card {
+  background-color: var(--second-color);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.review-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.review-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
 /* About Us Hero Section */
 .about-us-hero {
   background-image: url('../assets/bgabout.png'); 
