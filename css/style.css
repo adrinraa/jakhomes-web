@@ -14,6 +14,7 @@
     --text-color: #ffffff;
     --bg-color: #000000;
     --box-shadow: 2px 2px 18px rgba(86, 63, 28, 0.15);
+    --bg-overlay: rgba(0, 0.5, 0, 0.5);
 }
 
 body {
@@ -76,15 +77,66 @@ header {
 .homepage-background {
     background-image: url('../assets/homepage.png'); 
     background-size: cover;
-    background-position: center;
     width: 100%;
     min-height: 100vh; /* Ensure it covers at least full viewport height */
     position: relative;
 }
 
 .main-content {
-    padding-top: 99px; /* Add padding equal to navbar height */
+    padding-top: 99px;
 }
+
+/* LATEST PROPERTIES_HOMEPAGE */
+
+.latest-properties {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.latest-properties h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.property-carousel {
+  display: flex;
+  overflow-x: auto; /* Membuat kontainer bisa discroll horizontal */
+  gap: 20px; /* Jarak antar item */
+  scroll-snap-type: x mandatory; /* Smooth scroll snapping */
+  -webkit-overflow-scrolling: touch; /* Responsif untuk perangkat sentuh */
+  padding: 10px 0;
+  scrollbar-width: none; /* Hilangkan scrollbar di Firefox */
+}
+
+.property-carousel::-webkit-scrollbar {
+  display: none; /* Hilangkan scrollbar di Chrome, Edge, dll */
+}
+
+.property-item {
+  flex: 0 0 auto; /* Membuat item tetap pada ukuran */
+  width: 250px; /* Ukuran tetap tiap item */
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  background-color: var(--second-color);
+  scroll-snap-align: start; /* Posisi snap untuk setiap item */
+  text-align: center;
+}
+
+.property-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.property-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+/* FOOTER */
 
 .footer-container,
 .footer-container * {
@@ -196,7 +248,7 @@ header {
   font-size: 14px;
 }
 
-/*Sale*/
+/* SALE */
 
 .search-container {
     display: flex;
