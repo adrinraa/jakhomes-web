@@ -74,16 +74,202 @@ header {
     text-decoration: underline;
 }
 
-.homepage-background {
-    background-image: url('../assets/homepage.png'); 
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh; /* Ensure it covers at least full viewport height */
-    position: relative;
+/* Home Section */
+/* Home Section */
+.home {
+  height: 100vh;
+  background: url('../assets/homepage.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-content {
-    padding-top: 99px;
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /* Vertikal tengah */
+  width: 80%;
+  max-width: 1200px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better text contrast */
+  padding: 30px;
+  border-radius: 8px;
+  min-height: 450px;
+  gap: 20px; /* Adding some space between elements */
+}
+
+/* Content on the left (Text) */
+.home-content {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: flex-start; /* Left-align text */
+  text-align: left;
+  color: #fff; /* Ensure text is visible on dark background */
+}
+
+.home-content h1 {
+  font-size: 2rem; /* Adjust font size for better readability */
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.home-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* Search Bar */
+.search-barhp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 1;
+  max-width: 500px; /* Set a max width to avoid stretching */
+}
+
+/* Dropdown */
+.search-barhp .dropdown {
+  background: var(--second-color);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 130px;
+  text-align: center;
+}
+
+/* Search Box */
+.search-boxhp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  height: 50px;
+  flex: 1;
+}
+
+.search-boxhp .search-input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  color: var(--second-color);
+}
+
+.search-boxhp .search-placeholder {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.search-boxhp .search-input:focus ~ .search-placeholder,
+.search-boxhp .search-input:not(:placeholder-shown) ~ .search-placeholder {
+  opacity: 0;
+  transform: translateY(-30%);
+}
+
+.search-boxhp .search-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--second-color);
+  cursor: pointer;
+  padding: 12px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .emphasis {
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--second-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.card {
+  text-align: center;
+  max-width: 400px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--second-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
 /* LATEST PROPERTIES_HOMEPAGE */
@@ -135,6 +321,143 @@ header {
   font-size: 14px;
   color: var(--text-color);
 }
+
+
+/*W proud ourselves */
+.pride-container {
+  background-color: rgba(147, 122, 80, 0.7); /* Background transparan */
+  padding: 50px 20px; /* Padding untuk ruang di dalam container */
+  text-align: center;
+  border-radius: 10px; /* Membuat sudut melengkung */
+  display: inline-block; /* Supaya hanya selebar konten */
+  margin-bottom: 50px; /* Jarak ke footer */
+}
+
+.title {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  text-align: center; /* Memastikan teks berada di tengah */
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Jarak antar elemen */
+}
+
+.wepride {
+  max-width: 300px;
+}
+
+.wepride-title {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.wepride-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Styling untuk container */
+.promotion-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom */
+  gap: 30px; /* Jarak antara teks dan gambar */
+  padding: 30px 20px; /* Memberikan padding atas dan bawah */
+  background-color: var(--second-color); /* Background warna abu-abu muda */
+  max-width: 1000px;
+  margin: 0 auto; /* Centering container */
+  margin-bottom: 80px; /* Memberikan jarak ke footer */
+  border-radius: 10px; /* Border radius yang lebih halus */
+  margin-top: 80px;
+}
+
+.promotion-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.promotion-text h2 {
+  font-size: 1.5rem; /* Ukuran teks lebih besar dan lebih modern */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.promotion-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  max-width: 90%; /* Mengurangi lebar agar teks tidak terlalu melebar */
+}
+
+/* Tombol Sell Now */
+.sell-now {
+  background-color: var(--main-color); /* Warna latar belakang merah */
+  color: white; /* Warna teks putih */
+  font-size: 1.1rem; /* Ukuran teks */
+  padding: 15px 30px; /* Padding untuk tombol */
+  border: none;
+  border-radius: 10px; /* Sudut tombol melengkung */
+  cursor: pointer;
+  margin-top: 20px; /* Jarak dari paragraf ke tombol */
+  transition: background-color 0.3s, transform 0.3s ease; /* Efek transisi */
+}
+
+.sell-now:hover {
+  background-color: var(--second-color); /* Warna tombol lebih gelap saat hover */
+  transform: scale(1.05); /* Sedikit pembesaran saat hover */
+}
+
+/* Styling gambar */
+.promotion-image img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Efek transformasi saat hover */
+}
+
+/* Efek hover pada gambar dan teks */
+.promotion-container > div {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-container > div:hover {
+  transform: scale(1.05); /* Sedikit pembesaran saat hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+  .promotion-container {
+    grid-template-columns: 1fr; /* Mengubah grid menjadi satu kolom pada layar kecil */
+    text-align: center; /* Memastikan teks berada di tengah */
+  }
+
+  .promotion-text h2 {
+    font-size: 2rem; /* Menyesuaikan ukuran font untuk perangkat kecil */
+  }
+
+  .promotion-text p {
+    font-size: 1rem; /* Menyesuaikan ukuran font untuk perangkat kecil */
+  }
+
+  .sell-now {
+    width: 100%; /* Tombol mengambil lebar penuh pada perangkat kecil */
+    padding: 15px; /* Padding lebih kecil untuk perangkat kecil */
+  }
+}
+
 
 /* FOOTER */
 
@@ -251,19 +574,19 @@ header {
 /* SALE */
 
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 80px 0 20px;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 20px;
+  gap: 5px; /* Dikurangi untuk memperkecil jarak */
 }
 
 .search-bar {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid var(--main-color);
-    border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
 }
 
 .dropdown select {
@@ -699,8 +1022,6 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
 }
 }
 
-/* Review */
-
 .review-hero {
   background-image: url('../assets/reviewback.jpg'); 
   background-size: cover;
@@ -1038,4 +1359,3 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
       max-height: 250px;
   }
 }
-
