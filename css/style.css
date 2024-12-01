@@ -687,95 +687,40 @@ header {
   border-radius: 5px;
 }
 
-/* Property Detail Section */
 .property-detail-container {
-display: flex;
-gap: 20px;
-padding: 20px;
-margin: 20px auto;
-max-width: 1200px;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Space between the main image and the grid */
+  padding: 20px;
+  margin: 20px auto; /* Center the container horizontally */
+  max-width: 1200px;
+  align-items: center; /* Center content horizontally */
 }
 
-/* Main Image */
 .main-image-container {
-flex: 2;
-max-width: 600px; /* Membatasi lebar gambar utama */
-display: flex;
-justify-content: center; /* Memusatkan gambar secara horizontal */
+  width: 100%; /* Ensure the image container spans the available width */
+  display: flex;
+  justify-content: center; /* Center the image inside the container */
 }
 
 .main-image-container img {
-width: 100%;
-height: auto; /* Pastikan gambar mengikuti rasio potrait */
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 50%; /* Ensure the image scales responsively */
+  height: auto;
 }
 
-/* Image Grid */
 .image-grid {
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center; /* Memusatkan gambar grid secara vertikal */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create a responsive grid */
+  gap: 10px; /* Space between images */
+  width: 90%; /* Grid spans full width */
 }
 
 .image-grid img {
-width: 20%;
-max-height: fit-content; 
-object-fit: cover;
-border-radius: 8px;
-cursor: pointer;
-aspect-ratio: 3 / 4;
+  width: 100%; /* Ensure images take up their container's width */
+  height: auto;
+  border-radius: 5px; /* Optional: Add rounded corners */
 }
 
-.image-grid img:hover {
-transform: scale(1.05);
-}
-
-/* Property Detail Section */
-.property-detail-container {
-display: flex;
-gap: 20px;
-padding: 20px;
-margin: 20px auto;
-max-width: 1200px;
-flex-wrap: wrap;
-}
-
-/* Main Image */
-.main-image-container {
-flex: 2;
-max-width: 600px; /* Membatasi lebar gambar utama */
-display: flex;
-justify-content: center; /* Memusatkan gambar secara horizontal */
-}
-
-.main-image-container img {
-width: 100%;
-height: auto; /* Pastikan gambar mengikuti rasio potrait */
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Grid */
-.image-grid {
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center; /* Memusatkan gambar grid secara vertikal */
-}
-
-.image-grid img {
-width: 20%;
-max-height: fit-content; 
-object-fit: cover;
-border-radius: 8px;
-cursor: pointer;
-aspect-ratio: 3 / 4;
-}
 
 .image-grid img:hover {
 transform: scale(1.05);
@@ -794,8 +739,9 @@ margin: 0 auto;
 .property-info h1 {
 font-size: 24px;
 font-weight: 600;
-margin-bottom: 10px;
 color: white;
+text-align: left;
+margin: 0px;
 }
 
 .property-price h2 {
