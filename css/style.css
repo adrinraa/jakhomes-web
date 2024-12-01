@@ -702,7 +702,7 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
 /* Review */
 
 .review-hero {
-  background-image: url('../assets/reviewbg.jpg'); 
+  background-image: url('../assets/reviewback.jpg'); 
   background-size: cover;
   background-position: center;
   min-height: 80vh;
@@ -713,53 +713,92 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
   margin-bottom: 20px;
 }
 
-.review-section {
-  background-color: var(--bg-color);
-  margin-top: 30px;
-  margin-bottom: auto;
-}
-
-.review-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Agar responsif */
-}
-
-.review-card {
-  background-color: var(--second-color);
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 300px;
+.section-title {
+  font-size: 24px;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  text-shadow: 2px 2px 8px rgba(143, 130, 96, 0.7);
 }
 
-.review-card:hover {
-  transform: scale(1.05); /* Efek zoom saat hover */
+/* Section 1: Photo Slider */
+.client-activity {
+  padding: 40px 20px;
+  background-color: var(--bg-color);
+}
+
+.photo-slider {
+  display: flex;
+  overflow-x: scroll; /* Tetap bisa di-scroll */
+  gap: 20px;
+  padding: 10px;
+  scrollbar-width: none; /* Untuk browser berbasis Firefox */
+  -ms-overflow-style: none; /* Untuk Internet Explorer dan Edge lama */
+}
+
+.photo-slider::-webkit-scrollbar {
+  display: none; /* Untuk browser berbasis WebKit seperti Chrome, Safari */
+}
+
+.slider-item {
+  min-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section 2: Customer Reviews */
+.customer-reviews {
+  padding: 40px 20px;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-photo-container {
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .review-photo {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  border: 4px solid;
+  border-color: var(--second-color);
+}
+
+.review-content {
+  flex-grow: 1;
 }
 
 .review-name {
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: bold;
-  color: var(--text-color);
   margin-bottom: 10px;
+  color: var(--text-color);
 }
 
 .review-text {
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--text-color);
-  line-height: 1.5;
 }
 
 /* About Us Hero Section */
