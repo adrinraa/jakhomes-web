@@ -689,251 +689,272 @@ header {
 
 /* Property Detail Section */
 .property-detail-container {
-display: flex;
-gap: 20px;
-padding: 20px;
-margin: 20px auto;
-max-width: 1200px;
-flex-wrap: wrap;
-}
-
-/* Main Image */
-.main-image-container {
-flex: 2;
-max-width: 600px; /* Membatasi lebar gambar utama */
-display: flex;
-justify-content: center; /* Memusatkan gambar secara horizontal */
-}
-
-.main-image-container img {
-width: 100%;
-height: auto; /* Pastikan gambar mengikuti rasio potrait */
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Grid */
-.image-grid {
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center; /* Memusatkan gambar grid secara vertikal */
-}
-
-.image-grid img {
-width: 20%;
-max-height: fit-content; 
-object-fit: cover;
-border-radius: 8px;
-cursor: pointer;
-aspect-ratio: 3 / 4;
-}
-
-.image-grid img:hover {
-transform: scale(1.05);
-}
-
-/* Property Detail Section */
-.property-detail-container {
-display: flex;
-gap: 20px;
-padding: 20px;
-margin: 20px auto;
-max-width: 1200px;
-flex-wrap: wrap;
-}
-
-/* Main Image */
-.main-image-container {
-flex: 2;
-max-width: 600px; /* Membatasi lebar gambar utama */
-display: flex;
-justify-content: center; /* Memusatkan gambar secara horizontal */
-}
-
-.main-image-container img {
-width: 100%;
-height: auto; /* Pastikan gambar mengikuti rasio potrait */
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Grid */
-.image-grid {
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
-justify-content: center; /* Memusatkan gambar grid secara vertikal */
-}
-
-.image-grid img {
-width: 20%;
-max-height: fit-content; 
-object-fit: cover;
-border-radius: 8px;
-cursor: pointer;
-aspect-ratio: 3 / 4;
-}
-
-.image-grid img:hover {
-transform: scale(1.05);
-}
-
-/* Property Info Section */
-.property-info {
-padding: 20px;
-background-color: #5e503f;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-max-width: 800px;
-margin: 0 auto;
-}
-
-.property-info h1 {
-font-size: 24px;
-font-weight: 600;
-margin-bottom: 10px;
-color: white;
-}
-
-.property-price h2 {
-font-size: 28px;
-color: #fff;
-font-weight: 600;
-margin-bottom: 15px;
-}
-
-.property-details {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-.property-details li {
-display: flex;
-align-items: center;
-gap: 10px;
-margin: 10px 0;
-font-size: 16px;
-}
-
-.property-details i {
-font-size: 20px;
-color: bisque;
-}
-
-.property-description {
-margin-top: 20px;
-background-color: bisque;
-padding: 15px;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-text-align: justify;  
-}
-
-.property-description h3 {
-font-size: 20px;
-font-weight: 600;
-color: #333;
-margin-bottom: 10px;
-text-align: left; 
-}
-
-.property-description p {
-font-size: 16px;
-line-height: 1.6;
-color: #333;
-}
-
-/* Agent Contact Section */
-.agent-contact {
-display: flex;
-gap: 10px;
-align-items: center;
-background-color: #5e503f;
-border-radius: 8px;
-padding: 10px;
-box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-max-width: 400px;
-margin: 20px auto;
-}
-
-.agent-contact img.agent-photo {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-object-fit: cover;
-border: 3px solid burlywood;
-}
-
-.agent-info h3 {
-font-size: 26px;
-font-weight: 600;
-margin-bottom: 0.2px;
-color: #fff;
-}
-
-.agent-info p {
-font-size: 14px;
-color: white;
-margin-bottom: 10px;
-}
-
-.contact-buttons {
-display: flex;
-gap: 10px;
-}
-
-.contact-buttons button {
-display: flex;
-align-items: center;
-gap: 8px;
-padding: 10px 15px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-color: #000000;
-font-weight: bold;
-font-size: 14px;
-transition: background-color 0.3s ease;
-}
-
-.call-button {
-background-color: #3498db;
-}
-
-.call-button:hover {
-background-color: #2980b9;
-}
-
-.whatsapp-button {
-background-color: #25d366;
-}
-
-.whatsapp-button:hover {
-background-color: #1dbf57;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-.property-detail-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  }
+  
+  /* Main Image */
+  .main-image-container {
+  flex: 2;
+  max-width: 600px; /* Membatasi lebar gambar utama */
+  display: flex;
+  justify-content: center; /* Memusatkan gambar secara horizontal */
+  }
+  
+  .main-image-container img {
+  width: 100%;
+  height: auto; /* Pastikan gambar mengikuti rasio potrait */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Grid */
+  .image-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center; /* Memusatkan gambar grid secara vertikal */
+  }
+  
+  .image-grid img {
+  width: 20%;
+  max-height: fit-content; 
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  aspect-ratio: 3 / 4;
+  }
+  
+  .image-grid img:hover {
+  transform: scale(1.05);
+  }
+  
+  /* Property Detail Section */
+  .property-detail-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  }
+  
+  /* Main Image */
+  .main-image-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .main-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Grid */
+  .image-grid {
+    flex: 1;
+    display: flex;
     flex-direction: column;
-}
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .image-grid img {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    aspect-ratio: 3 / 4;
+  }
+  
+  /* Responsive Design (Example): */
+  @media (max-width: 768px) {
+    .main-image-container {
+        flex: 1;
+    }
+  
+    .image-grid {
+        flex: 1;
+        flex-direction: row;
+        gap: 10px;
+    }
+  
+    .image-grid img {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 50%;
+    }
+  }
+  
+  /* Property Info Section */
+  .property-info {
+    padding: 10px;
+    background-color: #5e503f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    display: flex; /* Add display: flex to use flexbox */
+    flex-direction: column; /* Set flex direction to column */
+  }
+  
+  .property-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .property-price h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+  }
+  
+  .property-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .property-details li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  }
+  
+  .property-details i {
+  font-size: 20px;
+  color: bisque;
+  }
+  
+  .property-description {
+  margin-top: 20px;
+  background-color: bisque;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;  
+  }
+  
+  .property-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left; 
+  }
+  
+  .property-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  }
+  
+  /* Agent Contact Section */
+  .agent-contact {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #5e503f;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  }
+  
+  .agent-contact img.agent-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid burlywood;
+  }
+  
+  .agent-info h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0.2px;
+  color: #fff;
+  }
+  
+  .agent-info p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+  }
+  
+  .contact-buttons {
+  display: flex;
+  gap: 10px;
+  }
+  
+  .contact-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .call-button {
+  background-color: #3498db;
+  }
+  
+  .call-button:hover {
+  background-color: #2980b9;
+  }
+  
+  .whatsapp-button {
+  background-color: #25d366;
+  }
+  
+  .whatsapp-button:hover {
+  background-color: #1dbf57;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+  .property-detail-container {
+      flex-direction: column;
+  }
+  
+  .image-grid img {
+      height: 80px;
+  }
+  
+  .agent-contact {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  }
 
-.image-grid img {
-    height: 80px;
-}
-
-.agent-contact {
-    flex-direction: column;
-    align-items: flex-start;
-}
-}
-
-/*Team*/
-
+/* TEAM */
 h1 {
 text-align: center;
 margin: 100px 0;
@@ -1022,6 +1043,20 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
 }
 }
 
+/* DESIGN & BUILD */
+.service-hero {
+  background-image: url('../assets/designbg.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* REVIEW */
 .review-hero {
   background-image: url('../assets/reviewback.jpg'); 
   background-size: cover;
