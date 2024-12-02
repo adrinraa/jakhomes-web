@@ -1067,6 +1067,52 @@ background-color: #e5c8a8; /* Warna hover yang lebih terang */
   box-sizing: border-box;
 }
 
+.gallery-section {
+  background-color: var(--bg-color); /* Warna latar */
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #333;
+  color: var(--main-color);
+  text-shadow: 2px 2px 8px rgba(143, 130, 96, 0.7)
+}
+
+.gallery-container {
+  display: flex;
+  gap: 15px; /* Jarak antar gambar */
+  overflow-x: auto; /* Scrollable horizontal */
+  scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+  -ms-overflow-style: none; /* Sembunyikan scrollbar di IE/Edge */
+}
+
+.gallery-container::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar di Chrome/Safari */
+}
+
+.gallery-item {
+  flex: 0 0 auto; /* Supaya item tidak menyusut */
+  width: 450px; /* Ukuran gambar */
+  height: 400px;
+  border-radius: 10px; /* Sudut melengkung */
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Proporsi gambar */
+  transition: transform 0.3s ease; /* Efek saat hover */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); /* Zoom sedikit saat hover */
+}
+
 .process-container {
   display: flex;
   flex-wrap: wrap;
